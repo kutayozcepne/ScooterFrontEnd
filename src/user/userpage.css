@@ -1,0 +1,135 @@
+/* userpage.css */
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+  
+
+  
+#map {
+
+
+}
+
+
+  
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+  
+
+.mapboxgl-popup-content {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fffa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+  
+.mapboxgl-popup-content h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #007bff;
+}
+  
+.mapboxgl-popup-content p {
+    margin: 5px 0 0;
+}
+
+
+
+.sidebar-toggle {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 5;
+    background: #007bff;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar-toggle:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+.sidebar-toggle:active {
+    transform: scale(0.95);
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 75px;
+    left: -350px;
+    width: 250px;
+    height: 50%;
+    background: #007bff3f;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: left 0.3s ease;
+    z-index: 3;
+    border-radius: 10px;
+}
+
+.sidebar.open {
+    left: 0;
+
+}
+
+.sidebar button {
+    padding: 10px 15px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.ride-info {
+    margin-top: 20px;
+    text-align: center;
+    color:white;
+    font: bold 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+}

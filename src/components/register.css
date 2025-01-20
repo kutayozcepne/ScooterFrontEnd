@@ -1,0 +1,118 @@
+/* Main container styling */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position:relative;
+  background-image: url('../../public/images/MainBackground.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+
+  height: 100vh; 
+  background-color: #f4f4f9;
+  
+}
+
+/* Styling the form container */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px; /* Limits the form width */
+  background-color: rgba(200, 189, 189, 0.774);
+  padding: 20px 20px; /* Spacing inside the form */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+h1 {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #bdb1b1cc;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  text-align: center;
+  
+}
+
+h3 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 2px;
+  background-color: #00000063;
+  border-radius: 10px;
+    
+  padding: 20px 40px;
+}
+
+/* Input field styling */
+input,
+select {
+  width: 100%;
+  padding: 12px 15px; /* Slight padding for better spacing */
+  margin: 10px 0; /* Adds space between fields */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Placeholder styling */
+input::placeholder {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Select dropdown styling */
+select {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Focus effect for input and select */
+input:focus,
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Link styling */
+a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
